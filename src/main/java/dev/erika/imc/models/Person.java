@@ -13,7 +13,7 @@ public class Person {
     return weight;
   }
 
-  public void setWeigt(double weight){
+  public void setWeight(double weight){
     this.weight = weight;
   }
 

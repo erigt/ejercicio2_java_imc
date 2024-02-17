@@ -30,11 +30,14 @@ public final class App {
         double metros = reading.nextDouble();
 
         Person person = new Person(peso, metros);
-        double imc = reading.nextDouble();
+        
+        Imc imcCalculator = new Imc();
 
+        String imcResult = imcCalculator.calculateIMC(person);
+        double imcValue = person.getWeight();
         Math.pow(person.getHeight(), 2);
 
-        System.out.println("El IMC es: " + imc);
+        System.out.println("El IMC es: " + imcResult + imcValue);
         reading.close();
         
     }
